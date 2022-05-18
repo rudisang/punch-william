@@ -33,7 +33,7 @@
                         bar = bar+5;
                         health.style.width = bar+"%";
                     }
-                    
+
                     timer = timer-1;
                     time.innerHTML = timer
 
@@ -80,7 +80,7 @@
             william.src = 'punched.png'
             william.style.width = '200px'
 
-            bar = bar-2;
+            bar = bar-5;
             health.style.width = bar+"%";
 
             if(bar <= 0){
