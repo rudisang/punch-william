@@ -29,8 +29,11 @@
             setTimeout(function(){
                 
                 interVal = setInterval(function () {
-                    bar = bar+3;
-                    health.style.width = bar+"%";
+                    if(bar <= 100){
+                        bar = bar+5;
+                        health.style.width = bar+"%";
+                    }
+                    
                     timer = timer-1;
                     time.innerHTML = timer
 
