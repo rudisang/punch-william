@@ -1,5 +1,5 @@
         let bar = 100;
-        let timer = 8;
+        let timer = 30;
         let gameInterVal
         let interVal
         let startscreen = document.getElementById('startscreen')
