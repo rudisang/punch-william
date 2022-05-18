@@ -29,7 +29,7 @@
             setTimeout(function(){
                 
                 interVal = setInterval(function () {
-                    console.log(timer)
+                    bar = bar+3;
                     timer = timer-1;
                     time.innerHTML = timer
 
