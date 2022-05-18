@@ -129,6 +129,6 @@
                 document.getElementById('level-text').innerHTML = 'God Mode'
             }
 
-            document.getElementById('comptime').innerHTML = 30-timer
+            document.getElementById('comptime').innerHTML = 25-timer
             
         }
