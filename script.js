@@ -30,7 +30,7 @@
                 
                 interVal = setInterval(function () {
                     if(bar <= 100){
-                        bar = bar+3;
+                        bar = bar+2;
                         health.style.width = bar+"%";
                     }
 
