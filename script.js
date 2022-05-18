@@ -124,6 +124,8 @@
                 document.getElementById('level-text').innerHTML = 'Normal'
             }else if(level.value == 1000){
                 document.getElementById('level-text').innerHTML = 'Easy'
+            }else if(level.value == 1500){
+                document.getElementById('level-text').innerHTML = 'Beginner'
             }else if(level.value == 500){
                 document.getElementById('level-text').innerHTML = 'Moderate'
             }else if(level.value == 200){
