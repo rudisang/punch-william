@@ -62,8 +62,8 @@
             let snowball = document.getElementById("snowballAppear");
             snowball.style.display = '';
             snowball.style.position = 'absolute';
-            snowball.style.left = x + 'px';
-            snowball.style.top = y + 'px';
+            snowball.style.left = x-50 + 'px';
+            snowball.style.top = y-50 + 'px';
         }
 
         function punch(){
@@ -110,13 +110,13 @@
             clearInterval(interVal);
             clearInterval(gameInterVal);
 
-            if(level.value == 1000){
+            if(level.value == 900){
                 document.getElementById('level-text').innerHTML = 'Normal'
-            }else if(level.value == 1500){
+            }else if(level.value == 1000){
                 document.getElementById('level-text').innerHTML = 'Easy'
-            }else if(level.value == 900){
+            }else if(level.value == 500){
                 document.getElementById('level-text').innerHTML = 'Moderate'
-            }else if(level.value == 300){
+            }else if(level.value == 200){
                 document.getElementById('level-text').innerHTML = 'God Mode'
             }
 
