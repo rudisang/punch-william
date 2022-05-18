@@ -83,7 +83,12 @@
                 youWin()
             }
 
-            setTimeout(function(){william.src = 'william-normal.png'}, 300);
+            setTimeout(function(){
+                william.src = 'william-normal.png'
+                william.style.top = Math.floor(Math.random() * 80)+'%'
+                william.style.left = Math.floor(Math.random() * 80)+'%'
+                william.style.width = Math.floor(Math.random() * 200)+'px'
+            }, 500);
             userClicked()
         }
 
