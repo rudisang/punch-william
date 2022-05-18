@@ -1,0 +1,44 @@
+
+body{
+  margin: 0;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(239,247,255,1)), color-stop(15%, rgba(239,247,255,1)), color-stop(100%, rgba(180,188,221,1)));
+  background: linear-gradient(135deg, rgba(239,247,255,1) 0%, rgba(239,247,255,1) 15%, rgba(180,188,221,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(239,247,255,1) 0%, rgba(239,247,255,1) 15%, rgba(180,188,221,1) 100%);
+  background: -moz-linear-gradient(-45deg, rgba(239,247,255,1) 0%, rgba(239,247,255,1) 15%, rgba(180,188,221,1) 100%);
+
+}
+
+.smooth{
+  transition: ease-in-out .5s !important;
+}
+
+.center-text{
+  text-align: center !important;
+}
+
+.w-100{
+  width:100% !important;
+}
+
+#startscreen{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mh100{
+  max-height: 100vh !important;
+}
+
+.hidden-flow{
+  overflow: hidden;
+}
+
+.healthbar{
+  border: 1px solid black;
+  height:20px;
+  margin-top:30px;
+  width:60%;
+  margin-left:20px;
+  border-radius:5px;
+}

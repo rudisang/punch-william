@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Punch Motsetserepa</title>
+</head>
+<body class="vh-100 mh100 hidden-flow">
+
+    <div id="startscreen" class="vw-100 vh-100" style="z-index:9;background-color: rgba(0, 0, 0, 0.263);position:fixed">
+        <div class="card bg-dark" style="width:400px;height:400px">
+            <div class="card-body center-text d-flex justify-content-center align-items-center">
+                <div class="">
+                    <h3 class="font-monospace center-text text-light">Welcome To Punch William</h3>
+                    <small class="mb-2 text-light center-text">Select a level and begin</small>
+                    <div class="form-group mb-2 mt-2">
+                        <select name="level" id="level" class="form-control">
+                            <option value="1000" selected>Select Level</option>
+                            <option value="1500">Easy</option>
+                            <option value="900">Moderate</option>
+                            <option value="300">God Mode</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-light" onClick="startGame()">Start Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ended" style="display:none !important" class="vw-100 vh-100 d-flex justify-content-center align-items-center" style="margin-top:-30px;z-index:9;background-color: rgba(0, 0, 0, 0.263);position:fixed">
+        <div class="card bg-dark" style="width:400px;height:400px">
+            <div class="card-body center-text d-flex justify-content-center align-items-center">
+                <div class="">
+                    <img style="width:120px" src="winner.gif" alt="">
+                    <h1 class="font-monospace center-text text-light">You Win</h1>
+                    <p class="text-light">Difficulty Level: <span class="p-2 bg-light dark-text" style="border-radius: 5px;color:rgb(65, 65, 65) !important" id="level-text"></span></p>
+                    <p class="text-light">Finished in <span id="comptime"></span> seconds</p>
+                    <button class="btn btn-light" onClick="window.location.reload();">Restart Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loser" style="display:none !important" class="vw-100 vh-100 d-flex justify-content-center align-items-center" style="margin-top:-30px;z-index:9;background-color: rgba(0, 0, 0, 0.263);position:fixed">
+        <div class="card bg-dark" style="width:400px;height:400px">
+            <div class="card-body center-text d-flex justify-content-center align-items-center">
+                <div class="">
+                    <img style="width:200px" src="loser.png" alt="">
+                    <h1 style="font-weight:900" class="font-monospace center-text text-light">You Lose</h1>
+                    <button class="btn btn-light" onClick="window.location.reload();">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="canvas h-100 w-100 position-absolute">
+        <div class="healthbar">
+            <div id="health" class="bg-secondary h-100"></div>
+        </div>
+        <h1 id="time" style="float:right;top:-30px;left:-40px;font-weight:900" class="font-monospace position-relative">30</h1>
+
+        <img alt="snowballAppear" width=120 id="snowballAppear" style="display: none" src="glove.png"/>
+        <img class="position-relative" id="william" onclick="punch()" width="180" src="william-normal.png" alt="">
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
