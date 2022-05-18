@@ -89,10 +89,11 @@
 
             setTimeout(function(){
                 william.src = 'william-normal.png'
-                william.style.top = Math.floor(Math.random() * 80)+'%'
+                
+            }, 500);
+            william.style.top = Math.floor(Math.random() * 80)+'%'
                 william.style.left = Math.floor(Math.random() * 80)+'%'
                 william.style.width = Math.floor(Math.random() * 200)+'px'
-            }, 500);
             userClicked()
         }
 
