@@ -1,5 +1,5 @@
         let bar = 100;
-        let timer = 25;
+        let timer = 30;
         let gameInterVal
         let interVal
         let startscreen = document.getElementById('startscreen')
@@ -132,6 +132,6 @@
                 document.getElementById('level-text').innerHTML = 'God Mode'
             }
 
-            document.getElementById('comptime').innerHTML = 25-timer
+            document.getElementById('comptime').innerHTML = 30-timer
             
         }
