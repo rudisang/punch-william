@@ -1,5 +1,5 @@
         let bar = 100;
-        let timer = 30;
+        let timer = 25;
         let gameInterVal
         let interVal
         let startscreen = document.getElementById('startscreen')
@@ -22,8 +22,8 @@
             gameInterVal = setInterval(function () {
                 william.style.top = Math.floor(Math.random() * 80)+'%'
                 william.style.left = Math.floor(Math.random() * 80)+'%'
-                william.style.width = Math.floor(Math.random() * 300)+'px'
-                i = Math.floor(Math.random() * (1500 - 500 + 1)) + 400
+                william.style.width = Math.floor(Math.random() * 200)+'px'
+                
             }, i);
 
             setTimeout(function(){
