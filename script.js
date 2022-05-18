@@ -30,6 +30,7 @@
                 
                 interVal = setInterval(function () {
                     bar = bar+3;
+                    health.style.width = bar+"%";
                     timer = timer-1;
                     time.innerHTML = timer
 
@@ -76,7 +77,7 @@
             william.src = 'punched.png'
             william.style.width = '200px'
 
-            bar = bar-5;
+            bar = bar-2;
             health.style.width = bar+"%";
 
             if(bar <= 0){
